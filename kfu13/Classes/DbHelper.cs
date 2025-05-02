@@ -1,5 +1,4 @@
-﻿
-namespace kfu13;
+﻿namespace kfu13;
 public class DbHelper
 {
     public void SaveSubscriberToDb(Subscriber subscriber)

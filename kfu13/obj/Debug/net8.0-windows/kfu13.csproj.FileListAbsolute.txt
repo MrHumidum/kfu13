@@ -120,3 +120,4 @@ C:\Mac\Home\Documents\Projects\c#\kfu13\kfu13\bin\Debug\net8.0-windows\tr\Micros
 C:\Mac\Home\Documents\Projects\c#\kfu13\kfu13\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Mac\Home\Documents\Projects\c#\kfu13\kfu13\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Mac\Home\Documents\Projects\c#\kfu13\kfu13\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Mac\Home\Documents\Projects\c#\kfu13\kfu13\obj\Debug\net8.0-windows\kfu13.sourcelink.json

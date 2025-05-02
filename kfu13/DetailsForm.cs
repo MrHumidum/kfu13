@@ -1,5 +1,4 @@
-﻿using System.Windows.Forms;
-namespace kfu13;
+﻿namespace kfu13;
 public partial class DetailsForm : Form
 {
     public DetailsForm(string title, Dictionary<string, string> details)

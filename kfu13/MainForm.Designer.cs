@@ -46,6 +46,95 @@
             panelTop.SuspendLayout();
             SuspendLayout();
             // 
+            // treeView1
+            // 
+            treeView1.Dock = DockStyle.Left;
+            treeView1.Location = new Point(0, 64);
+            treeView1.Name = "treeView1";
+            treeView1.Size = new Size(302, 498);
+            treeView1.TabIndex = 7;
+            treeView1.NodeMouseDoubleClick += TreeView1_NodeMouseDoubleClick;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(311, 64);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.Size = new Size(569, 498);
+            dataGridView1.TabIndex = 9;
+            // 
+            // splitter1
+            // 
+            splitter1.Location = new Point(302, 64);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new Size(9, 498);
+            splitter1.TabIndex = 8;
+            splitter1.TabStop = false;
+            // 
+            // buttonLoadJson
+            // 
+            buttonLoadJson.AutoSize = true;
+            buttonLoadJson.Location = new Point(10, 11);
+            buttonLoadJson.Name = "buttonLoadJson";
+            buttonLoadJson.Size = new Size(105, 41);
+            buttonLoadJson.TabIndex = 1;
+            buttonLoadJson.Text = "Загрузить JSON";
+            buttonLoadJson.Click += buttonLoadJson_Click;
+            // 
+            // buttonLoadXml
+            // 
+            buttonLoadXml.AutoSize = true;
+            buttonLoadXml.Location = new Point(131, 11);
+            buttonLoadXml.Name = "buttonLoadXml";
+            buttonLoadXml.Size = new Size(105, 41);
+            buttonLoadXml.TabIndex = 2;
+            buttonLoadXml.Text = "Загрузить XML";
+            buttonLoadXml.Click += buttonLoadXml_Click;
+            // 
+            // buttonLoadToDb
+            // 
+            buttonLoadToDb.AutoSize = true;
+            buttonLoadToDb.Location = new Point(252, 11);
+            buttonLoadToDb.Name = "buttonLoadToDb";
+            buttonLoadToDb.Size = new Size(131, 41);
+            buttonLoadToDb.TabIndex = 3;
+            buttonLoadToDb.Text = "Загрузить в БД";
+            buttonLoadToDb.Click += buttonLoadToDb_Click;
+            // 
+            // buttonShow
+            // 
+            buttonShow.AutoSize = true;
+            buttonShow.Location = new Point(399, 11);
+            buttonShow.Name = "buttonShow";
+            buttonShow.Size = new Size(88, 41);
+            buttonShow.TabIndex = 4;
+            buttonShow.Text = "Показать";
+            buttonShow.Click += buttonShow_Click;
+            // 
+            // buttonClose
+            // 
+            buttonClose.AutoSize = true;
+            buttonClose.Location = new Point(500, 11);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(82, 41);
+            buttonClose.TabIndex = 5;
+            buttonClose.Text = "Закрыть";
+            buttonClose.Click += buttonClose_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(719, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(158, 55);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // panelTop
             // 
             panelTop.BackColor = Color.LightGray;
@@ -58,115 +147,14 @@
             panelTop.Dock = DockStyle.Top;
             panelTop.Location = new Point(0, 0);
             panelTop.Name = "panelTop";
-            panelTop.Size = new Size(1006, 68);
+            panelTop.Size = new Size(880, 64);
             panelTop.TabIndex = 0;
-            // 
-            // buttonLoadJson
-            // 
-            buttonLoadJson.AutoSize = true;
-            buttonLoadJson.Location = new Point(12, 12);
-            buttonLoadJson.Name = "buttonLoadJson";
-            buttonLoadJson.Size = new Size(120, 44);
-            buttonLoadJson.TabIndex = 1;
-            buttonLoadJson.Text = "Загрузить JSON";
-            buttonLoadJson.Click += buttonLoadJson_Click;
-            // 
-            // buttonLoadXml
-            // 
-            buttonLoadXml.AutoSize = true;
-            buttonLoadXml.Location = new Point(150, 12);
-            buttonLoadXml.Name = "buttonLoadXml";
-            buttonLoadXml.Size = new Size(120, 44);
-            buttonLoadXml.TabIndex = 2;
-            buttonLoadXml.Text = "Загрузить XML";
-            buttonLoadXml.Click += buttonLoadXml_Click;
-            // 
-            // buttonLoadToDb
-            // 
-            buttonLoadToDb.AutoSize = true;
-            buttonLoadToDb.Location = new Point(288, 12);
-            buttonLoadToDb.Name = "buttonLoadToDb";
-            buttonLoadToDb.Size = new Size(150, 44);
-            buttonLoadToDb.TabIndex = 3;
-            buttonLoadToDb.Text = "Загрузить в БД";
-            buttonLoadToDb.Click += buttonLoadToDb_Click;
-            // 
-            // buttonShow
-            // 
-            buttonShow.AutoSize = true;
-            buttonShow.Location = new Point(456, 12);
-            buttonShow.Name = "buttonShow";
-            buttonShow.Size = new Size(100, 44);
-            buttonShow.TabIndex = 4;
-            buttonShow.Text = "Показать";
-            buttonShow.Click += buttonShow_Click;
-            // 
-            // buttonClose
-            // 
-            buttonClose.AutoSize = true;
-            buttonClose.Location = new Point(572, 12);
-            buttonClose.Name = "buttonClose";
-            buttonClose.Size = new Size(94, 44);
-            buttonClose.TabIndex = 5;
-            buttonClose.Text = "Закрыть";
-            buttonClose.Click += buttonClose_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(678, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(180, 59);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            // 
-            // treeView1
-            // 
-            treeView1.Dock = DockStyle.Left;
-            treeView1.Location = new Point(0, 68);
-            treeView1.Name = "treeView1";
-            treeView1.Size = new Size(345, 532);
-            treeView1.TabIndex = 7;
-            //treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick_1);
-            treeView1.Location = new Point(0, 68);
-            treeView1.Name = "treeView1";
-            treeView1.Size = new Size(345, 532);
-            treeView1.TabIndex = 7;
-            // 
-            // splitter1
-            // 
-            splitter1.Location = new Point(345, 68);
-            splitter1.Name = "splitter1";
-            splitter1.Size = new Size(10, 532);
-            splitter1.TabIndex = 8;
-            splitter1.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(355, 68);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(651, 532);
-            dataGridView1.TabIndex = 9;
-            //dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(355, 68);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(651, 532);
-            dataGridView1.TabIndex = 9;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 16F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1006, 600);
+            ClientSize = new Size(880, 562);
             Controls.Add(dataGridView1);
             Controls.Add(splitter1);
             Controls.Add(treeView1);
