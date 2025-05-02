@@ -1,0 +1,86 @@
+{
+    "MobileOperator": {
+        "Subscribers": [
+            {
+                "Name": "Иван Петров",
+                "PhoneNumber": "+79161234567",
+                "TariffPlan": {
+                    "Name": "Безлимитный",
+                    "Cost": 700
+                },
+                "Balance": 250,
+                "Address": {
+                    "City": "Москва",
+                    "Street": "Ленина, 10"
+                }
+            },
+            {
+                "Name": "Ольга Смирнова",
+                "PhoneNumber": "+79261239876",
+                "TariffPlan": {
+                    "Name": "Эконом",
+                    "Cost": 300
+                },
+                "Balance": 50,
+                "Address": {
+                    "City": "Санкт-Петербург",
+                    "Street": "Невский проспект, 25"
+                }
+            }
+        ],
+        "Tariffs": [
+            {
+                "TariffName": "Безлимитный",
+                "MonthlyFee": 700,
+                "Minutes": {
+                    "Mobile": "Безлимит",
+                    "Landline": 500
+                },
+                "Internet": {
+                    "Daytime": "Безлимит",
+                    "Nighttime": "Безлимит"
+                },
+                "ExtraServices": "Роуминг бесплатно"
+            },
+            {
+                "TariffName": "Эконом",
+                "MonthlyFee": 300,
+                "Minutes": {
+                    "Mobile": 300,
+                    "Landline": 100
+                },
+                "Internet": {
+                    "Daytime": "5 ГБ",
+                    "Nighttime": "10 ГБ"
+                },
+                "ExtraServices": "Пакет SMS 100"
+            }
+        ],
+        "Services": [
+            {
+                "ServiceName": "Безлимитный интернет",
+                "Description": "Неограниченный доступ к интернету",
+                "Price": 200,
+                "ServiceType": {
+                    "Communication": "Интернет"
+                },
+                "Availability": {
+                    "Roaming": "Да",
+                    "Russia": "Да"
+                }
+            },
+            {
+                "ServiceName": "Роуминг плюс",
+                "Description": "Сниженные тарифы в роуминге",
+                "Price": 150,
+                "ServiceType": {
+                    "Communication": "Связь"
+                },
+                "Availability": {
+                    "Roaming": "Да",
+                    "Russia": "Нет"
+                }
+            }
+        ]
+    }
+}

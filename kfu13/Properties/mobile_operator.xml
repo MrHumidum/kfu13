@@ -1,0 +1,86 @@
+<MobileOperator>
+    <Subscribers>
+        <Subscriber>
+            <Name>Иван Петров</Name>
+            <PhoneNumber>+79161234567</PhoneNumber>
+            <TariffPlan>
+                <Name>Безлимитный</Name>
+                <Cost>700</Cost>
+            </TariffPlan>
+            <Balance>250</Balance>
+            <Address>
+                <City>Москва</City>
+                <Street>Ленина, 10</Street>
+            </Address>
+        </Subscriber>
+        <Subscriber>
+            <Name>Ольга Смирнова</Name>
+            <PhoneNumber>+79261239876</PhoneNumber>
+            <TariffPlan>
+                <Name>Эконом</Name>
+                <Cost>300</Cost>
+            </TariffPlan>
+            <Balance>50</Balance>
+            <Address>
+                <City>Санкт-Петербург</City>
+                <Street>Невский проспект, 25</Street>
+            </Address>
+        </Subscriber>
+    </Subscribers>
+
+    <Tariffs>
+        <Tariff>
+            <TariffName>Безлимитный</TariffName>
+            <MonthlyFee>700</MonthlyFee>
+            <Minutes>
+                <Mobile>Безлимит</Mobile>
+                <Landline>500</Landline>
+            </Minutes>
+            <Internet>
+                <Daytime>Безлимит</Daytime>
+                <Nighttime>Безлимит</Nighttime>
+            </Internet>
+            <ExtraServices>Роуминг бесплатно</ExtraServices>
+        </Tariff>
+        <Tariff>
+            <TariffName>Эконом</TariffName>
+            <MonthlyFee>300</MonthlyFee>
+            <Minutes>
+                <Mobile>300</Mobile>
+                <Landline>100</Landline>
+            </Minutes>
+            <Internet>
+                <Daytime>5 ГБ</Daytime>
+                <Nighttime>10 ГБ</Nighttime>
+            </Internet>
+            <ExtraServices>Пакет SMS 100</ExtraServices>
+        </Tariff>
+    </Tariffs>
+
+    <Services>
+        <Service>
+            <ServiceName>Безлимитный интернет</ServiceName>
+            <Description>Неограниченный доступ к интернету</Description>
+            <Price>200</Price>
+            <ServiceType>
+                <Communication>Интернет</Communication>
+            </ServiceType>
+            <Availability>
+                <Roaming>Да</Roaming>
+                <Russia>Да</Russia>
+            </Availability>
+        </Service>
+        <Service>
+            <ServiceName>Роуминг плюс</ServiceName>
+            <Description>Сниженные тарифы в роуминге</Description>
+            <Price>150</Price>
+            <ServiceType>
+                <Communication>Связь</Communication>
+            </ServiceType>
+            <Availability>
+                <Roaming>Да</Roaming>
+                <Russia>Нет</Russia>
+            </Availability>
+        </Service>
+    </Services>
+</MobileOperator>
